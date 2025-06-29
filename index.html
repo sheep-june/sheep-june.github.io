@@ -175,11 +175,13 @@
   <li>広告バナー管理（管理者向け CRUD）: バナー作成・更新・削除・一覧表示</li>
 </ul>
 
-  <h4>🚀 デプロイ</h4>
-  <ul>
-    <li>フロントエンド: Vercel による自動デプロイ</li>
-    <li>バックエンド: AWS EC2 上で PM2 管理、Nginx + Certbot で HTTPS 運用</li>
-  </ul>
+<h4>🚀 デプロイ</h4>
+<ul>
+  <li>フロントエンド: Vercel による自動デプロイ</li>
+  <li>バックエンド: AWS EC2 上で PM2 管理、Nginx + Certbot で HTTPS 運用</li>
+  <li>CI/CD パイプライン: GitHub Actions を使用し、プッシュ時にテスト → ビルド → 自動デプロイを実行</li>
+</ul>
+
   <h4>🔄 処理フロー</h4>
   <p>ユーザー → React UI → Axios API call → Express Server → JWT認証 → Mongooseモデル → MongoDB</p>
 </div>
