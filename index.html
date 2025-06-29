@@ -150,6 +150,33 @@
 <div class="divider"></div>
 <div class="section">
   <h2>📁 プロジェクト (Projects)</h2>
+  <!-- Shopping Mall追加 -->
+<div class="card">
+  <h3>Shopping Mall - 商品購入サイト（Node.js + React）</h3>
+  <p>
+    <a href="https://github.com/sheep-june/shop-back.git" target="_blank">バックエンド</a> |
+    <a href="https://github.com/sheep-june/shop-front.git" target="_blank">フロントエンド</a>
+  </p>
+  <h4>🎯 主な機能</h4>
+  <ul>
+    <li>ユーザー認証（JWT）｜会員登録・ログイン・ログアウト</li>
+    <li>商品管理｜登録・一覧・検索・絞り込み・詳細表示</li>
+    <li>カート操作｜追加・削除・数量変更・購入処理</li>
+    <li>購入履歴｜履歴一覧・合計金額表示</li>
+    <li>レビュー投稿・表示（購入済みのみ許可）</li>
+    <li>ウィッシュリスト（お気に入り管理）</li>
+    <li>お問い合わせ・FAQ</li>
+    <li>広告バナー管理（管理者向けCRUD）</li>
+  </ul>
+  <h4>🔄 処理フロー</h4>
+  <pre style="background:#f0f0f0;padding:0.5rem;border-radius:4px;">
+ユーザー ─> React UI 
+      └─ Axios API call 
+           └─ Express Server 
+                └─ JWT認証 →  Mongooseモデル → MongoDB
+  </pre>
+</div>
+  
     <!-- 졸업작품 - 부동산 지뢰찾기 -->
   <div class="divider"></div>
   <div class="card">
