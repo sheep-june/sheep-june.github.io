@@ -209,7 +209,7 @@
 <ul>
   <li>フロントエンド: Vercel による自動デプロイ</li>
   <li>バックエンド: AWS EC2 上で PM2 管理、Nginx + Certbot で HTTPS 運用</li>
-  <li>CI/CD パイプライン: GitHub Actions を使用し、プッシュ時にテスト → ビルド → 自動デプロイを実行</li>
+  <li>CI/CD パイプライン: GitHub Actions を使用し、main ブランチへのプッシュ時に git pull・npm install・PM2 リロードを自動実行</li>
 </ul>
 
   <h4>🔄 処理フロー</h4>
